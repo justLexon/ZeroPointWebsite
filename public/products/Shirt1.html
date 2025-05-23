@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Point Home</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="top-header">
+            <div class="header-left">
+                <img src="../images/zeroPointLogo.png" alt="Logo" class="logo" />
+                <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../pages/Shop.html">Shop</a>
+                <a href="#">Team</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            
+            <h2>Zero Point Tee</h2>
+
+            <div class="shop-container">
+                
+                    <div class="product-card">
+                        <img src="../images/Shirt1.png" alt="Shirt 1">
+                        <h3>Zero Point Tee</h3>
+                        <p>$25.00</p>
+                    </div>
+
+                    <div class="payment-card">
+                        <h3>Payment Method</h3>
+                        <p>Credit Card</p>
+                        <p>Debit Card</p>
+                        <p>Click</p>
+                    </div>
+
+            </div>
+
+            <button id="buy-button">Buy Now</button>
+
+            <script>
+            document.getElementById('buy-button').addEventListener('click', async () => {
+                const res = await fetch('/create-checkout-session', { method: 'POST' });
+                const data = await res.json();
+                window.location = data.url;
+            });
+            </script>
+           
+        </main>
+        
+        <footer class="bottom-footer">
+            <p>&copy; All Rights Reserved</p>
+        </footer>
+    </div>
+
+  <script src="../script.js"></script>
+</body>
+
+
+</html>

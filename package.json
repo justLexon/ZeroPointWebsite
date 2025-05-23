@@ -1,0 +1,26 @@
+{
+  "name": "peakweakwebsite",
+  "version": "1.0.0",
+  "description": "5_22_25\r -Added Shop Link\r -Added Clickable Cards in Shop\r -Formatted Some of the Product Pages",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justLexon/ZeroPointWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justLexon/ZeroPointWebsite/issues"
+  },
+  "homepage": "https://github.com/justLexon/ZeroPointWebsite#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "stripe": "^18.1.1"
+  }
+}
