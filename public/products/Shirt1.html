@@ -28,22 +28,22 @@
 
             <div class="shop-container">
                 
-                    <div class="product-card">
-                        <img src="../images/Shirt1.png" alt="Shirt 1">
-                        <h3>Zero Point Tee</h3>
-                        <p>$25.00</p>
+
+                <div class="product-layout">
+
+                    <div class="productBigContainer">
+                        <img src="../images/Shirt1.png" alt="Shirt 1" class="imgBig">
                     </div>
 
                     <div class="payment-card">
                         <h3>Payment Method</h3>
                         <p>Credit Card</p>
                         <p>Debit Card</p>
-                        <p>Click</p>
+                        <button id="buy-button">Buy With Stripe</button>
                     </div>
+                </div>
 
             </div>
-
-            <button id="buy-button">Buy Now</button>
 
             <script>
             document.getElementById('buy-button').addEventListener('click', async () => {
