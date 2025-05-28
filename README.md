@@ -18,4 +18,4 @@ Home Page
 -Socials
 -Sponsors
 -Recent Scrims/Comp
--
+-Patreon
