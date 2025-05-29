@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const modalImg = document.getElementById("fullImg");
   const closeBtn = document.querySelector(".close");
 
-  const thumbnails = document.querySelectorAll(".scrimImgs");
+  const thumbnails = document.querySelectorAll(".clickableImgs");
+
 
   thumbnails.forEach((img) => {
     img.addEventListener("click", () => {

@@ -1,3 +1,8 @@
+.clickableImgs  {
+  background-color: transparent;
+}
+
+
 /* Reset and Base */
 html, body {
   height: 100%;
@@ -194,8 +199,12 @@ h1 {
   flex-shrink: 0;
 }
 
+.headerTitle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
 
-.newsContainer {
+.newsContainerOutside {
   max-width: 90%;
   width: 1400px;
   height: auto;
@@ -205,9 +214,10 @@ h1 {
   background-color: #222;
   color: #ffffff;  
   display: flex;
-  flex-direction: column;
+  flex-direction: auto;
   align-items: center;
   justify-content: center;
+  gap: 50px;
 }
 
 .newsContainer p {
@@ -216,14 +226,20 @@ h1 {
   height: auto;
 }
 
+
+/* Scrim Wrapper */
 .scrimWrapper {
+  background-color: rgb(38, 88, 95);
+  max-width: 450px;
+  max-height: 900px;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping on small screens */
+  flex-direction: auto;
   justify-content: center;
   gap: 20px; /* spacing between images */
 }
 
-.scrimImgs {
+.scrimImgs img {
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -234,7 +250,25 @@ h1 {
 }
 
 
+/* Members Wrapper */
+.membersWrapper {
+  background-color: rgb(66, 99, 51);
+  max-width: 550px;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  justify-content: center;
+}
 
+.membersImgs img {
+  max-width: 400px;
+  width: 300px;
+  height: auto;
+  margin: 0 50px;
+  display: block;
+  margin: 10px auto;
+}
 
 
 /* Modal container (hidden by default) */
@@ -258,6 +292,8 @@ h1 {
   width: 80%;
   max-width: 900px;
   height: auto;
+  transform: scale(1.8);
+  padding-top: 130px;
 }
 
 /* Close button */
