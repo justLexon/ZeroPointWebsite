@@ -62,7 +62,7 @@ main {
   background-color: #222;
   color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   padding: 1rem;
@@ -79,8 +79,8 @@ main {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-right: 25px;
+  justify-content: center;
+  padding-right: 0px;
 }
 
 .header-center {
@@ -89,16 +89,20 @@ main {
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding-right: 0px;
+  padding-right: 90px;  /* Change this for Home,Shop,Team to move inside the bg-color/container */
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 150px;
 }
 
 .header-right {
   background-color: transparent;
   display: flex;
   align-items: center;
-  padding-right: 120px;
+  padding-right: 0px;
+  margin-right: 50px;
   flex-shrink: 0;
-  width: 140px;
+  width: 100px;
 }
 
 .cart a{
@@ -111,6 +115,9 @@ main {
   transform: scale(1.3);
 }
 
+
+
+/* Changes the Home,Shop,Team Transitions in the Header */
 .nav-linksA a {
   color: white;
   text-decoration: none;
@@ -127,6 +134,8 @@ main {
   color: rgb(230, 34, 230);
 }
 
+
+/* Changes Cart In the Header */
 .nav-linksB a {
   color: white;
   display: inline-block;
@@ -141,7 +150,7 @@ main {
 }
 
 .nav-linksB a:hover {
-  transform: translate(-300px, 50px); /* Moves it up 10px */
+  transform: translate(-400px, 100px); /* Moves it up 10px */
   font-size: 200px;
   color: rgb(16, 110, 218);
 }
@@ -296,7 +305,7 @@ h1 {
 
 /* Members Wrapper */
 .membersWrapper {
-  background-color: #a54a4a;
+  background-color: #4aa570;
   min-width: auto;
   width: 450px;
   height: 800px;
@@ -312,8 +321,8 @@ h1 {
 }
 
 .membersImgs img {
-  width: 100%;
-  max-width: 250px;
+  width: 90%;
+  max-width: 220px;
   min-width: 100px;
   height: auto;
   display: block;
@@ -403,6 +412,8 @@ h1 {
 }
 
 
+
+/* For ZPNT LOGO IN HEADER */
 .logo-text {
   background-color: transparent;
   font-family: 'Orbitron', sans-serif;
