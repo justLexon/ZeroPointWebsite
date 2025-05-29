@@ -234,19 +234,15 @@ h1 {
 
 /* Scrim Wrapper */
 .scrimWrapper {
-  background-color: #a54a4a;
+  background-color: #222;
   min-width: auto;
-  width: 450px;
-  height: 800px;
+  width: 550px;
+  max-height: 900px;
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
   flex-direction: column;
   justify-content: center;
-}
-
-.scrimImgs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px; /* spacing between images */
 }
 
 .scrimImgs img {
@@ -256,35 +252,32 @@ h1 {
   max-width: 300px;
   margin: 0 50px;
   display: block;
-  margin: 15px auto;
+  margin: 10px auto;
 }
 
 
 /* Members Wrapper */
 .membersWrapper {
-  background-color: #a54a4a;
+  background-color: #222;
   min-width: auto;
   width: 450px;
-  height: 800px;
+  max-width: 450px;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
   justify-content: center;
-}
-
-.membersImgs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .membersImgs img {
   width: 100%;
-  max-width: 250px;
+  max-width: 280px;
   min-width: 100px;
   height: auto;
   display: block;
-  margin: 15px auto;
+  margin: 10px auto;
 }
+
 
 
 /* Modal container (hidden by default) */
