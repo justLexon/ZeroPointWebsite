@@ -13,9 +13,17 @@
 -Use Better Images for Products
 -Research into Payment Method
 
-Home Page
+***Home Page***
 -Recent Videos
 -Socials
 -Sponsors
 -Recent Scrims/Comp
 -Patreon
+
+    5_28_25
+-Added Cart to Header and Pages
+***STILL NEED TO ADD A CART PAGE***
+-Add sections for home
+
+********************
+***Fix Header in body in all PAGES***

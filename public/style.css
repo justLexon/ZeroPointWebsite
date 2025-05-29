@@ -18,7 +18,7 @@ html, body {
 
 main {
   flex: 1;
-  padding: 120px 40px 40px; /* Top padding for header offset */
+  padding: 20px 0px 60px; /* Top padding for header offset */
 }
 
 /* Header */
@@ -26,7 +26,7 @@ main {
   background-color: #222;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: nowrap;
   padding: 1rem;
@@ -42,14 +42,23 @@ main {
 .header-left {
   display: flex;
   align-items: center;
-  padding-left: 30px;
-  flex-wrap: nowrap;
+  justify-content: left;
+  padding-right: 0px;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding-right: 50px;
 }
 
 .header-right {
   display: flex;
   align-items: left;
   padding-right: 120px;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -61,20 +70,34 @@ main {
 .nav-linksA a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   padding-left: 25px;
-  transition: color 0.2s ease;
+  transition: color 2.0s ease;
+  transition: font-size 1.4s ease;
+}
+
+.nav-linksA a:hover {
+  font-size: 27px;
+  color: rgb(230, 34, 230);
 }
 
 .nav-linksB a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
   padding-left: 25px;
-  transition: color 0.2s ease;
+  transition: color 6.0s ease;
+  transition: font-size 1.4s ease;
 }
+
+.nav-linksB a:hover {
+  font-size: 57px;
+  color: rgb(16, 110, 218);
+}
+
+
 
 /* Main Content Elements */
 h1 {
@@ -257,17 +280,38 @@ h1 {
 
 
 /* Intro Video Container */
-.introVid {
+.introVidContainer {
   max-width: 90%;
-  width: 1400px;
+  width: 800px;
   height: auto;
+  max-height: 600px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 10px;
-  background-color: #222;
+  border-radius: 20px;
   color: #ffffff;  
+  background-color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.introVid {
+  width: 100%;
+  height: auto;
+  min-width: 450px;
+  max-width: 800px;
+}
+
+
+/* Section Divider */
+
+.divider {
+  background-color: rgb(138, 83, 138);
+  display: flex;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 180px;
+  width: 100vw;
+  position: relative;
 }
