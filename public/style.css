@@ -117,27 +117,32 @@ main {
   font-size: 22px;
   font-weight: 500;
   padding-left: 25px;
-  transition: color 2.0s ease;
-  transition: font-size 1.4s ease;
+  transition:
+  color 0.5s ease,
+  font-size 0.5s ease;
 }
 
 .nav-linksA a:hover {
-  font-size: 27px;
+  font-size: 30px;
   color: rgb(230, 34, 230);
 }
 
 .nav-linksB a {
   color: white;
+  display: inline-block;
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
   padding-left: 25px;
-  transition: color 6.0s ease;
-  transition: font-size 1.4s ease;
+  transition:
+    transform 1s ease-in-out,
+    color 0.4s ease,
+    font-size 1.4s ease;
 }
 
 .nav-linksB a:hover {
-  font-size: 57px;
+  transform: translate(-300px, 50px); /* Moves it up 10px */
+  font-size: 200px;
   color: rgb(16, 110, 218);
 }
 
