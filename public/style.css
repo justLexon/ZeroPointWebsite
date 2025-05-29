@@ -8,6 +8,27 @@
   font-size: 35px;
 }
 
+.welcome-text {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 110px;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideDown 1.5s ease-out forwards;
+  color: #ce0ef5;
+  text-shadow: 0 0 10px rgba(124, 11, 128, 0.7);
+  letter-spacing: 2px;
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .clickableImgs  {
   background-color: transparent;
 }
@@ -55,25 +76,33 @@ main {
 }
 
 .header-left {
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: left;
-  padding-right: 0px;
+  padding-right: 25px;
 }
 
 .header-center {
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding-right: 50px;
+  padding-right: 0px;
 }
 
 .header-right {
+  background-color: transparent;
   display: flex;
-  align-items: left;
+  align-items: center;
   padding-right: 120px;
   flex-shrink: 0;
+  width: 140px;
+}
+
+.cart a{
+  justify-content: center;
 }
 
 .logo {
@@ -366,4 +395,29 @@ h1 {
   height: 180px;
   width: 100vw;
   position: relative;
+}
+
+
+.logo-text {
+  background-color: transparent;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  color: #ea00ff;
+  text-shadow: 0 0 15px rgba(215, 73, 250, 0.7), 0 0 40px rgba(204, 66, 247, 0.5);
+  text-align: center;
+  margin-left: 25px;
+  animation: glowFadeIn 1.5s ease-out;
+}
+
+@keyframes glowFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
