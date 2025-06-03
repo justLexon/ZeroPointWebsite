@@ -12,8 +12,8 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 3rem;
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 110px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   opacity: 0;
   transform: translateY(-30px);
   animation: fadeSlideDown 1.5s ease-out forwards;
@@ -384,14 +384,14 @@ h1 {
 /* Intro Video Container */
 .introVidContainer {
   max-width: 90%;
-  width: 800px;
+  width: 1200px;
   height: auto;
   max-height: 600px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
   color: #ffffff;  
-  background-color: #222;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -402,7 +402,8 @@ h1 {
   width: 100%;
   height: auto;
   min-width: 450px;
-  max-width: 800px;
+  max-width: 1100px;
+  border-radius: 35px;
 }
 
 
