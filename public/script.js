@@ -1,7 +1,7 @@
 
 
 document.addEventListener("DOMContentLoaded", () => {
- const stripe = Stripe(STRIPE_FRONTEND_KEY);
+ const stripe = Stripe('STRIPE_FRONTEND_KEY');
 
   const buyButton = document.getElementById('buy-button');
   if (buyButton) {
