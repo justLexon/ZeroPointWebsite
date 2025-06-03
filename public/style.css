@@ -1,3 +1,7 @@
+.test {
+  padding-left: 25px;
+}
+
 .headerTitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
@@ -79,37 +83,27 @@ main {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 0;
+  width: 25%;
 }
 
 .header-center {
   cursor: pointer;
-  background-color: transparent ;
+  background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex: auto;
-  flex-direction: row;
-  padding-right: 190px;  /* Change this for Home,Shop,Team to move inside the bg-color/container */
-  margin-left: 0px;
-  margin-right: 0px;
-  width: 60px;
+  justify-content: center;
 }
 
 .header-right {
   background-color: transparent;
   display: flex;
   align-items: center;
-  padding-right: 0px;
-  margin-right: 0px;
-  flex-shrink: 0;
-  width: 100px;
+  width: 25%;
 }
 
-.cart a{
-  background-color: transparent;
-  justify-content: center;
+.cart {
+  background-color: transparent;    
 }
 
 .logo {
@@ -121,49 +115,60 @@ main {
 
 
 /* Changes the Home,Shop,Team Transitions in the Header */
+.nav-linksA {
+  display: flex;
+  gap: 2rem;
+}
+
 .nav-linksA a {
   color: white;
   text-decoration: none;
   font-size: 22px;
   font-weight: 500;
-  padding-left: 25px;
+  padding-left: 0px;
   transition:
   color 0.4s ease,
   font-size 0.4s ease;
 }
 
 .nav-linksA a:hover {
-  font-size: 28px;
+  font-size: 22px;
   color: rgb(230, 34, 230);
 }
 
 .nav-linksA a.active {
-  font-size: 30px;
+  font-size: 22px;
   color: rgb(230, 34, 230);
 }
 
 
 /* Changes Cart In the Header */
+.nav-linksB {
+  margin-left: 45%;
+}
+
 .nav-linksB a {
+  background-color: transparent;
   color: white;
   display: inline-block;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 500;
-  padding-left: 25px;
   transition:
-    transform 1s ease-in-out,
     color 0.4s ease,
     font-size 0.4s ease;
 }
 
 .nav-linksB a:hover {
-  transform: translate(-400px, 100px); /* Moves it up 10px */
-  font-size: 200px;
+  font-size: 28px;
   color: rgb(16, 110, 218);
 }
 
 
+/* Help Center The Shop in Home,Shop,Team header */
+.shopHead {
+  
+}
 
 /* Main Content Elements */
 h1 {
@@ -386,9 +391,9 @@ h1 {
   max-width: 100%;
   width: 100%;
   height: auto;
-  max-height: 1100px;
+  max-height: 1400px;
   color: #ffffff;  
-  background-color: green;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +420,6 @@ h1 {
 }
 
 
-
 /* For ZPNT LOGO IN HEADER */
 .logo-text {
   background-color: transparent;
@@ -425,7 +429,7 @@ h1 {
   color: #ea00ff;
   text-shadow: 0 0 15px rgb(229, 34, 255), 0 0 40px rgb(220, 52, 253);
   text-align: center;
-  margin-left: 25px;
+  margin-left: 25%;
   animation: glowFadeIn 1.5s ease-out;
 }
 
@@ -441,23 +445,22 @@ h1 {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .top-header {
     height: 80px;
   }
 
-  .header-center {
-    max-width: 110px;
-    padding-right: 95px;
-  }
-
-  .header-right {
-    margin-right: 60px;
-    max-width: 90px;
-  }
-
   .logo-text {
-    font-size: 35px;
+    font-size: 25px;
+    margin-left: 5%;
+  }
+
+  .mainLogo {
+    width: 35px
+  }
+
+  .nav-linksA {
+    gap: 1rem;
   }
 
   .nav-linksA a {
@@ -465,11 +468,23 @@ h1 {
   }
 
   .nav-linksA a:hover {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .nav-linksA a.active {
-    font-size: 23px;
+    font-size: 21px;
     color: rgb(230, 34, 230);
+  }
+
+  .nav-linksB {
+    margin-left: 30%;
+  }
+
+  .nav-linksB a {
+    font-size: 18px;
+  }
+
+  .nav-linksB a:hover {
+    font-size: 21px;
   }
 }
