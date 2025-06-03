@@ -27,7 +27,7 @@ app.post('/create-checkout-session', async (req, res) => {
     cancel_url: 'http://localhost:4242/',
   });
 
-  res.json({ url: session.url });
+  res.json({ id: session.id });
 });
 
 app.listen(4242, () => console.log('Server running on http://localhost:4242'));

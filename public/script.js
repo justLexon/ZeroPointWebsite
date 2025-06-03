@@ -1,32 +1,30 @@
-//const stripe = Stripe('pk_test_51RRlPOAcjYn5KlGV9MdwfC5MMe2HTwyOvPQK02hlsrUQ3BTQS7716babkdQ5aA8EjKep34RLhBkXSTE5LsLuZx9r004vMf0HCw');
 
-function showMessage() {
-  alert("Button clicked!");
-}
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Stripe checkout button
-  const buyButton = document.getElementById("buy-button");
+ const stripe = Stripe(STRIPE_FRONTEND_KEY);
+
+  const buyButton = document.getElementById('buy-button');
   if (buyButton) {
-    buyButton.addEventListener("click", () => {
-      fetch("/create-checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          product: "zero-point-tee" // optional
-        })
-      })
-      .then(res => res.json())
-      .then(data => {
-        if (data.url) {
-          window.location.href = data.url;
+    buyButton.addEventListener('click', async () => {
+      try {
+        const response = await fetch('/create-checkout-session', { method: 'POST' });
+        const session = await response.json();
+
+        const { error } = await stripe.redirectToCheckout({
+          sessionId: session.id,
+        });
+
+        if (error) {
+          console.error(error);
+          alert('Payment could not be processed. Please try again.');
         }
-      })
-      .catch(err => console.error("Error:", err));
+      } catch (err) {
+        console.error('Fetch error:', err);
+        alert('Something went wrong. Please try again.');
+      }
     });
   }
+
 
   // Modal image enlarge
   const modal = document.getElementById("imgModal");
@@ -53,3 +51,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('.nav-linksA a');
+  const currentPath = window.location.pathname;
+
+  links.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+
+    // Compare using `endsWith` to match 'Shop.html', etc.
+    if (currentPath.endsWith(linkPath)) {
+      link.classList.add('active');
+    }
+  });
+});
+
