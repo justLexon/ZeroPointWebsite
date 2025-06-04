@@ -365,9 +365,9 @@ h1 {
 }
 
 .introVid {
-  width: 100vw;
+  width:100%;
   max-height: 100%;
-  margin-top: -50px;
+  margin-top: -30px;
   scale: 1;
 }
 
@@ -375,7 +375,7 @@ h1 {
 /* Section Divider */
 
 .divider {
-  background-color: purple;
+  background-color: transparent ;
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -417,7 +417,7 @@ h1 {
 
   .logo-text {
     font-size: 25px;
-    margin-left: 5%;
+    margin-left: 20%;
   }
 
   .mainLogo {
@@ -454,11 +454,9 @@ h1 {
   }
 
   .introVid {
-    margin-top: -25px;
+    margin-top: -20px;
   }
 }
-
-
 
 
 
@@ -472,8 +470,12 @@ h1 {
   justify-content: center;
 }
 
-.sponsorsPatreonCont a {
+.sponsorText {
   background-color: transparent;
+  margin-top: 140px;
+}
+
+.sponsorText a {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 50px;
 }
@@ -487,7 +489,9 @@ h1 {
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -506,5 +510,19 @@ h1 {
   max-width: 250px;
   display: block;
   margin: 15px auto;
+}
+
+.sponsorCodeTextCont {
+  height: 100%;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsorCodeText {
+  background-color: transparent;
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 22px;
 }
 
