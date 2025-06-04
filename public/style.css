@@ -274,7 +274,7 @@ h1 {
 }
 
 
-/* Scrim Wrapper */
+/* Posts Containers */
 .postCont {
   background-color: transparent;
   max-width: 500px;
@@ -371,7 +371,7 @@ h1 {
 /* Section Divider */
 
 .divider {
-  background-color: transparent;
+  background-color: purple;
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -449,3 +449,54 @@ h1 {
     font-size: 21px;
   }
 }
+
+
+
+
+
+/* ___________________________________________________ */
+
+
+.sponsorsPatreonCont {
+  background-color: wheat;
+  width: auto;
+  height: auto;
+  justify-content: center;
+}
+
+.sponsorsPatreonCont a {
+  background-color: transparent;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+/* Under Sponsors Title */
+.sponsors {
+  background-color: rgb(233, 48, 48);
+  max-width: 90%;
+  width: auto;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dubbySponsor {
+  max-width: 300px;
+  width: auto;
+  max-height: 100px;
+  height: auto;
+  background-color: rgb(15, 77, 40);
+}
+
+.dubbyImg {
+  width: auto;
+  height: auto;
+  min-width: 100px;
+  max-width: 250px;
+  display: block;
+  margin: 15px auto;
+}
+
