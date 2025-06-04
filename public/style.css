@@ -112,27 +112,26 @@ main {
 /* Changes the Home,Shop,Team Transitions in the Header */
 .nav-linksA {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-linksA a {
   color: white;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
-  padding-left: 0px;
   transition:
   color 0.4s ease,
   font-size 0.4s ease;
 }
 
 .nav-linksA a:hover {
-  font-size: 27px;
+  font-size: 25px;
   color: rgb(230, 34, 230);
 }
 
 .nav-linksA a.active {
-  font-size: 30px;
+  font-size: 27px;
   color: rgb(230, 34, 230);
 }
 
@@ -150,13 +149,11 @@ main {
   font-size: 25px;
   font-weight: 500;
   transition:
-    color 0.4s ease,
     font-size 0.4s ease;
 }
 
 .nav-linksB a:hover {
-  font-size: 28px;
-  color: #ea00ff;
+  background-color: transparent;
 }
 
 
@@ -208,6 +205,11 @@ h1 {
   background-color: transparent;
   width: 60px;
   height: auto;
+}
+
+.cartLogo {
+  margin-top: 10px;
+  width: 40px;
 }
 
 /* SHOP PAGE */
@@ -394,7 +396,7 @@ h1 {
   color: #ea00ff;
   text-shadow: 0 0 15px rgb(229, 34, 255), 0 0 40px rgb(220, 52, 253);
   text-align: center;
-  margin-left: 25%;
+  margin-left: 15%;
   animation: glowFadeIn 1.5s ease-out;
 }
 
@@ -417,27 +419,31 @@ h1 {
 
   .logo-text {
     font-size: 25px;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   .mainLogo {
     width: 0px
   }
 
+  .cartLogo {
+    width: 40px;
+  }
+
   .nav-linksA {
-    gap: 1rem;
+    gap: .5rem;
   }
 
   .nav-linksA a {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .nav-linksA a:hover {
-    font-size: 21px;
+    font-size: 17px;
   }
 
   .nav-linksA a.active {
-    font-size: 21px;
+    font-size: 19px;
     color: rgb(230, 34, 230);
   }
 
