@@ -1,7 +1,5 @@
 # ZeroPointWebsite
 
-***Inside script.js Uncomment the API
-
     5_22_25
 -Added Shop Link
 -Added Clickable Cards in Shop
@@ -27,3 +25,11 @@
 
 ********************
 ***Fix Header in body in all PAGES***
+
+    6_4_25
+-Sponsors Section: Add ZPNT for 10% OFF!
+    -Add Patreon.
+-HomepageShop: Update and add product cards.
+-Footer: Add socials.
+-Update all pages with new header and footer.
+-Update fonts to be consistent and look pretty.
