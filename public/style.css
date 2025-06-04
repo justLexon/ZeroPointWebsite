@@ -458,7 +458,7 @@ h1 {
 
 
 .sponsorsPatreonCont {
-  background-color: wheat;
+  background-color: transparent;
   width: auto;
   height: auto;
   justify-content: center;
@@ -472,10 +472,10 @@ h1 {
 
 /* Under Sponsors Title */
 .sponsors {
-  background-color: rgb(233, 48, 48);
+  background-color: transparent;
   max-width: 90%;
   width: auto;
-  margin: 0 auto;
+  margin: 20px auto;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -488,7 +488,7 @@ h1 {
   width: auto;
   max-height: 100px;
   height: auto;
-  background-color: rgb(15, 77, 40);
+  background-color: transparent;
 }
 
 .dubbyImg {
