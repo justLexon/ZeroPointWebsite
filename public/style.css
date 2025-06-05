@@ -209,7 +209,8 @@ h1 {
 }
 
 .cartLogo {
-  margin-top: 10px;
+  position: fixed;
+  margin-top: -22px;
   width: 40px;
   transition: 
     width 0.4s ease;
@@ -419,7 +420,7 @@ h1 {
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
   .logo-text {
     font-size: 25px;
     margin-left: 25%;
@@ -570,8 +571,17 @@ h1 {
 }
 
 .toggleButton {
-  z-index: 4000;
   position: fixed;
   scale: 1.4;
   margin-left: 1%;
+}
+
+.closeButton {
+  background-color: transparent;
+  margin-left: 91%;
+  margin-top: -15px;
+}
+
+.closeButtonX {
+  justify-content: right;
 }
