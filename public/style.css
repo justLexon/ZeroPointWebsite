@@ -64,7 +64,7 @@ main {
 
 /* Header */
 .top-header {
-  background-color: #000;
+  background-color: black;
   color: white;
   display: flex;
   justify-content: center;
@@ -101,10 +101,6 @@ main {
   display: flex;
   align-items: center;
   width: 25%;
-}
-
-.cart {
-  background-color: transparent;    
 }
 
 
@@ -191,13 +187,14 @@ h1 {
 
 /* Footer */
 .bottom-footer {
-  background-color: #111;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
   width: 100%;
   margin-top: auto;
+  z-index: 3000;
 }
 
 /* Image Styling */
@@ -207,9 +204,19 @@ h1 {
   height: auto;
 }
 
+.cart {
+  background-color: transparent;    
+}
+
 .cartLogo {
   margin-top: 10px;
   width: 40px;
+  transition: 
+    width 0.4s ease;
+}
+
+.cart img:hover {
+  width: 50px;
 }
 
 /* SHOP PAGE */
@@ -413,13 +420,8 @@ h1 {
 }
 
 @media (max-width: 860px) {
-  .top-header {
-    height: 80px;
-  }
-
   .logo-text {
     font-size: 25px;
-    margin-left: 10%;
   }
 
   .mainLogo {
@@ -532,3 +534,32 @@ h1 {
   margin-bottom: 22px;
 }
 
+
+/* __________________________________ */
+
+
+/* Sidebar */
+
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  display: none; /* Hidden by default */
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 70px;
+  padding: 1rem;
+  width: 250px;
+  height: 100%;
+  z-index: 2000;
+}
+
+/* Show sidebar on screens 768px and up */
+@media (max-width: 860px) {
+  .sidebar {
+    display: block;
+  }
+}
