@@ -66,5 +66,19 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add('active');
     }
   });
+
+  const sidebar = document.getElementById('sidebar');
+  const toggleBtn = document.getElementById('sidebar-toggle');
+  const closeBtn = document.getElementById('sidebar-close');
+
+  sidebar.style.display = "none";
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.style.display = 'flex';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.style.display = 'none';
+  });
 });
 

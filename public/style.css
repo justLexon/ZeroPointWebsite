@@ -403,7 +403,7 @@ h1 {
   color: #ea00ff;
   text-shadow: 0 0 15px rgb(229, 34, 255), 0 0 40px rgb(220, 52, 253);
   text-align: center;
-  margin-left: 15%;
+  margin-left: 22%;
   animation: glowFadeIn 1.5s ease-out;
 }
 
@@ -422,6 +422,7 @@ h1 {
 @media (max-width: 860px) {
   .logo-text {
     font-size: 25px;
+    margin-left: 25%;
   }
 
   .mainLogo {
@@ -547,9 +548,11 @@ h1 {
 
 .sidebar {
   display: none; /* Hidden by default */
-  background-color: black;
+  background-color: rgb(104, 39, 39);
   color: white;
   position: fixed;
+  display: flex;
+  flex-direction: column;
   top: 70px;
   padding: 1rem;
   width: 250px;
@@ -557,9 +560,18 @@ h1 {
   z-index: 2000;
 }
 
-/* Show sidebar on screens 768px and up */
-@media (max-width: 860px) {
-  .sidebar {
-    display: block;
-  }
+/* Optional: button styling */
+#sidebar-toggle, #sidebar-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.toggleButton {
+  z-index: 4000;
+  position: fixed;
+  scale: 1.4;
+  margin-left: 1%;
 }
