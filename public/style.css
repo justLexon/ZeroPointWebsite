@@ -599,6 +599,7 @@ h1 {
   display: flex;
   justify-content: center;
   background-color: transparent ;
+  margin-top: 30px;
 }
 
 .patreonSponsorB img {
@@ -620,13 +621,24 @@ h1 {
 
 /* Dubby */
 
-.dubbyImg {
-  width: auto;
+.dubbySponsor {
   height: auto;
-  min-width: 50px;
-  max-width: 60px;
-  display: block;
-  margin: 0 auto;
+  background-color: transparent;
+  margin-top: 30px;
+}
+
+.dubbySponsor img {
+  transition: 
+    width 0.3s ease;
+}
+
+.dubbySponsor img:hover {
+  width: 110px;
+}
+
+.dubbyImg {
+  width: 100px;
+  height: auto;
 }
 
 .sponsorCodeTextCont {
