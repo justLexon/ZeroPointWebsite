@@ -421,7 +421,8 @@ main {
 .patreonSponsor img,
 .patreonSponsorB img,
 .dubbySponsor img,
-.dubbySponsorB img {
+.dubbySponsorB img,
+.dubbySponsorC img {
   transition: width 0.3s ease;
 }
 
@@ -430,6 +431,10 @@ main {
 .dubbySponsor img:hover,
 .dubbySponsorB img:hover {
   width: 110px;
+}
+
+.dubbySponsorC img:hover {
+  width: 430px;
 }
 
 /* Sponsor Containers */
@@ -492,6 +497,11 @@ main {
 
 .dubbyImgB {
   width: 200px;
+  height: auto;
+}
+
+.dubbyImgC {
+  width: 400px;
   height: auto;
 }
 
@@ -613,4 +623,49 @@ main {
   .introVid {
     margin-top: -20px;
   }
+}
+
+
+
+
+
+
+
+
+/* Sponsors Test */
+
+.sponsor-feature {
+  text-align: center;
+  background-color: #1c1c1c;
+  padding: 3rem;
+  border-radius: 20px;
+  margin: 2rem auto;
+  max-width: 700px;
+  color: white;
+}
+
+.sponsor-tagline {
+  font-size: 2rem;
+  color: #ea00ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+.sponsor-blurb {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+.sponsor-button {
+  display: inline-block;
+  background-color: #ea00ff;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.sponsor-button:hover {
+  transform: scale(1.05);
 }
