@@ -431,7 +431,10 @@ main {
   transition: width 0.3s ease;
 }
 
-.patreonSponsor img:hover,
+.patreonSponsor img:hover {
+  width: 80px;
+}
+
 .patreonSponsorB img:hover,
 .dubbySponsor img:hover,
 .dubbySponsorB img:hover {
@@ -512,7 +515,7 @@ main {
 }
 
 .dubbyImgC {
-  width: 400px;
+  width: 350px;
   height: auto;
 }
 
@@ -526,10 +529,10 @@ main {
 .sponsor-feature {
   text-align: center;
   background-color: #1c1c1c;
-  padding: 3rem;
-  border-radius: 20px;
+  padding: 1rem;
+  border-radius: 50px;
   margin: 2rem 1rem;
-  max-width: 700px;
+  max-width: 650px;
   justify-self: center;
   align-self: center;
   color: white;
@@ -566,7 +569,7 @@ main {
 /* Why Dubby */
 .why-dubby {
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   padding: 2rem;
   background-color: #141414;
   color: #fff;
