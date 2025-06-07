@@ -153,6 +153,36 @@ main {
   background-color: transparent;
 }
 
+/* Side Bar Links */
+
+.nav-linksC {
+  margin-top: 45px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+  background-color: transparent;
+}
+
+.nav-linksC a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+  transition:
+  color 0.4s ease,
+  font-size 0.4s ease;
+}
+
+.nav-linksC a:hover {
+  font-size: 25px;
+  color: rgb(230, 34, 230);
+}
+
+.nav-linksC a.active {
+  font-size: 27px;
+  color: rgb(230, 34, 230);
+}
 
 /* Main Content Elements */
 h1 {
@@ -195,7 +225,7 @@ h1 {
   font-size: 14px;
   width: 100%;
   margin-top: auto;
-  z-index: 3000;
+  z-index: 800;
 }
 
 /* Image Styling */
@@ -453,7 +483,16 @@ h1 {
   }
 
   .patreonImg {
-    max-width: 65px;
+    width: 65px;
+  }
+
+  .patreonSponsor img {
+    transition: 
+      width 0.3s ease;
+  }
+
+  .patreonSponsor img:hover {
+    width: 80px;
   }
 
   .nav-linksA {
@@ -530,26 +569,62 @@ h1 {
   gap: 1rem;
 }
 
-.dubbySponsor {
-  max-width: 100px;
-  width: auto;
-  max-height: 100px;
+
+/* Patreon in Header */
+.patreonSponsor {
+  width: 80px;
   height: auto;
   background-color: transparent;
 }
+
+.patreonSponsor img {
+  transition: 
+    width 0.3s ease;
+}
+
+.patreonSponsor img:hover {
+  width: 80px;
+}
+
+.patreonImg {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Patreon on Sidebar */
+.patreonSponsorB {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: transparent ;
+}
+
+.patreonSponsorB img {
+  transition: 
+    width 0.3s ease;
+}
+
+.patreonSponsorB img:hover {
+  width: 110px;
+}
+
+.patreonImgB {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+
+/* Dubby */
 
 .dubbyImg {
   width: auto;
   height: auto;
   min-width: 50px;
   max-width: 60px;
-  display: block;
-  margin: 0 auto;
-}
-
-.patreonImg {
-  width: 70px;
-  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -581,7 +656,7 @@ h1 {
 
 .sidebar {
   display: none; /* Hidden by default */
-  background-color: rgb(104, 39, 39);
+  background-color: black;
   color: white;
   position: fixed;
   display: flex;
@@ -590,7 +665,7 @@ h1 {
   padding: 1rem;
   width: 250px;
   height: 100%;
-  z-index: 2000;
+  z-index: 900;
 }
 
 /* Optional: button styling */
