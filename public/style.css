@@ -450,6 +450,12 @@ main {
   background-color: transparent;
 }
 
+.sponsorPageCont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .sponsorText {
   margin-top: 140px;
 }
@@ -522,8 +528,10 @@ main {
   background-color: #1c1c1c;
   padding: 3rem;
   border-radius: 20px;
-  margin: 2rem auto;
+  margin: 2rem 1rem;
   max-width: 700px;
+  justify-self: center;
+  align-self: center;
   color: white;
 }
 
