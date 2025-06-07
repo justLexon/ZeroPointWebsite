@@ -100,6 +100,7 @@ main {
   background-color: transparent;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   width: 25%;
 }
 
@@ -134,7 +135,7 @@ main {
 
 /* Changes Cart In the Header */
 .nav-linksB {
-  margin-left: 45%;
+  margin-left: 15%;
 }
 
 .nav-linksB a {
@@ -206,10 +207,11 @@ h1 {
 
 .cart {
   background-color: transparent;    
+  margin-top: 15px;
+
 }
 
 .cartLogo {
-  position: fixed;
   margin-top: -22px;
   width: 40px;
   transition: 
@@ -426,9 +428,13 @@ h1 {
 
   .header-left {
     background-color: transparent;
-    width: 52%;
+    width: 57%;
     align-items: center;
     justify-content: center;
+  }
+
+  .header-right {
+    margin-right: 5%;
   }
 
   .logo-text {
@@ -444,6 +450,10 @@ h1 {
 
   .cartLogo {
     width: 40px;
+  }
+
+  .patreonImg {
+    max-width: 65px;
   }
 
   .nav-linksA {
@@ -465,7 +475,7 @@ h1 {
   }
 
   .nav-linksB {
-    margin-left: 30%;
+    margin-left: 15%;
   }
 
   .nav-linksB a {
@@ -521,7 +531,7 @@ h1 {
 }
 
 .dubbySponsor {
-  max-width: 300px;
+  max-width: 100px;
   width: auto;
   max-height: 100px;
   height: auto;
@@ -531,10 +541,17 @@ h1 {
 .dubbyImg {
   width: auto;
   height: auto;
-  min-width: 100px;
-  max-width: 250px;
+  min-width: 50px;
+  max-width: 60px;
   display: block;
-  margin: 15px auto;
+  margin: 0 auto;
+}
+
+.patreonImg {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .sponsorCodeTextCont {
