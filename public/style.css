@@ -240,7 +240,6 @@ h1 {
 .cart {
   background-color: transparent;    
   margin-top: 15px;
-
 }
 
 .cartLogo {
@@ -478,6 +477,11 @@ h1 {
 
   .mainLogo {
     display: none;
+  }
+
+  .cart {
+    align-items: center;
+    margin-top: 22px;
   }
 
   .cartLogo {

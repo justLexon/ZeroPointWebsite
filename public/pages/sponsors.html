@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zero Point Team</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -14,37 +15,82 @@
     <div class="page-wrapper">
         <header class="top-header">
             <div class="header-left">
+                    <div class="toggleButton">
+                        <button id="sidebar-toggle">☰</button>
+                    </div>
+                    
                     <div class="logo-text">ZPNT</div>
-                    <img src="/images/yesLogo.png" alt="Logo" class="mainLogo" />
+                    <img src="../images/yesLogo.png" alt="Logo" class="mainLogo" />
             </div>
             
             <div class="header-center">
                     <nav class="nav-linksA">
                         <a href="../index.html">Home</a>
-                        <div class="shopHead">
-                            <a href="../pages/shop.html">Shop</a>
-                        </div>
+                        <a href="../pages/shop.html">Shop</a>
                         <a href="team.html">Team</a>
+                        <a href="../pages/sponsors.html">Sponsors</a>
                     </nav>
             </div>
 
             <div class="header-right">
+                <div class="patreonSponsor">
+                    <a href="https://www.patreon.com/ZeroPointESports" target="_blank" rel="noopener noreferrer">
+                        <img src="../images//PatreonLogo.png" alt="Scrim1" class="patreonImg" id="thumbnailImg">
+                    </a>
+                </div>
+                
                 <nav class="nav-linksB">
                     <div class="cart">
-                        <a href="../index.html">Cart</a>
+                        <a href="index.html">
+                            <img src="../images/CartIcon.png" class="cartLogo">
+                        </a>
                     </div>
                 </nav>
             </div>
         </header>
 
-        <main class="main-content">
-            <img src="../images/yesLogo.png" alt="Logo" class="mainLogo" />
 
-        </main>
-        
-        <footer class="bottom-footer">
-            <p>&copy; All Rights Reserved</p>
-        </footer>
+        <div class="layout">
+            <div id="sidebar" class="sidebar">
+                    <div class="closeButton">   
+                        <button id="sidebar-close" class="closeButtonX">✕</button>
+                    </div> 
+                    
+
+                    <nav class="nav-linksC">
+                        <a href="../index.html">Home</a>
+                        <a href="../pages/shop.html">Shop</a>
+                        <a href="team.html">Team</a>
+                        <a href="../pages/sponsors.html">Sponsors</a>
+                    </nav>
+                    
+                    <a class="headerTitle">Support Us</a>
+
+                    <div class="patreonSponsorB">
+                        <a href="https://www.patreon.com/ZeroPointESports" target="_blank" rel="noopener noreferrer">
+                            <img src="../images//PatreonLogo.png" alt="Scrim1" class="patreonImgB" id="thumbnailImg">
+                        </a>
+                    </div>
+
+                    <div class="dubbySponsor">
+                        <a href="https://www.dubby.gg/pages/solo-leveling" target="_blank" rel="noopener noreferrer">
+                            <img src="../images//DubbySponsor.png" alt="Scrim1" class="dubbyImg" id="thumbnailImg">
+                        </a>
+                    </div>
+
+            </div>
+
+
+            <main class="main-content">
+                <img src="../images/yesLogo.png" alt="Logo" class="mainLogo" />
+
+            </main>
+            
+
+            <footer class="bottom-footer">
+                <p>&copy; All Rights Reserved</p>
+            </footer>
+        </div>
     </div>
 
   <script src="../script.js"></script>
