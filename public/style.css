@@ -68,7 +68,7 @@ main {
 .header-center {
   flex: auto;
   justify-content: center;
-  cursor: pointer;
+  cursor: default;
 }
 
 /* Header Logo */
@@ -259,6 +259,12 @@ main {
 .font1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 40px;
+}
+
+.font2 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
 }
 
 /* ============================================================
