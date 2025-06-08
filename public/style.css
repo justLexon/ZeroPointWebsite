@@ -318,7 +318,7 @@ main {
   width: 220px;
   height: 380px;
   background: rgba(255, 255, 255, 0.001);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.541);
   backdrop-filter: blur(10px);
   color: white;
   padding: 20px 15px;
@@ -355,7 +355,7 @@ main {
 .product-price {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #ccc;
+  color: #ebebeb;
 }
 
 
@@ -469,7 +469,7 @@ main {
 }
 
 .dubbySponsorC img:hover {
-  width: 430px;
+  width: 380px;
 }
 
 /* Sponsor Containers */
@@ -560,8 +560,9 @@ main {
 /* Sponsor Card For Sponsors Page */
 .sponsor-feature {
   text-align: center;
-  background-color: #131313;
-  padding: 1rem;
+  background-color: rgba(58, 1, 63, 0.03);
+  border: 2px solid rgba(255, 255, 255, 0.514);
+  backdrop-filter: blur(10px);  padding: 1rem;
   border-radius: 50px;
   margin: 2rem 1rem;
   max-width: 650px;
@@ -603,25 +604,36 @@ main {
   max-width: 800px;
   margin: 1.5rem auto;
   padding: 2rem;
-  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(234, 0, 255, 0.003);
   color: #fff;
   border-radius: 16px;
   box-shadow: 0 0 20px rgba(234, 0, 255, 0.3);
 }
 
-.why-dubby h2 {
-  font-size: 2rem;
-  color: #ea00ff;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-shadow: 0 0 10px rgba(234, 0, 255, 0.6);
-}
-
 .why-dubby p {
+  font-family: 'Titillium Web', sans-serif;
   font-size: 1.1rem;
   line-height: 1.7;
-  margin-bottom: 1.2rem;
+  margin-bottom: .2rem;
   text-align: center;
+}
+
+.why-dubbyTop {
+  background-color: transparent;
+  height: auto;
+  align-self: center;
+  justify-content: center;
+}
+
+.why-dubbyTop a {
+  font-size: 2rem;
+  color: rgb(213, 0, 233);
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(234, 0, 255, 0.65);
 }
 
 /* ============================================================
