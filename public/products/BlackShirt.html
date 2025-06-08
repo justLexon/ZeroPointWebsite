@@ -88,7 +88,11 @@
                 
                 <div class="productViewing-container">
                     <div class="product-cardViewing">
-                        <img src="../images/BlackShirtF.png" alt="Zero Point Tee">
+                        <img id="product-image" src="../images/BlackShirtF.png" alt="Zero Point Tee">
+                        <div class="image-controls">
+                            <button onclick="changeImage(-1)">←</button>
+                            <button onclick="changeImage(1)">→</button>
+                        </div>
                     </div>
 
                     <div class="outPurchase-card">

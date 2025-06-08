@@ -89,5 +89,27 @@ document.addEventListener("DOMContentLoaded", () => {
       button.classList.add('active'); // Add active to clicked
     });
   });
+
+
+
+
+// Product Pages Images For Clicking
+
+  const images = [
+    "../images/BlackShirtF.png",
+    "../images/BlackShirtB.png",
+  ];
+
+  let currentImageIndex = 0;
+
+  window.changeImage = function(direction) {
+    currentImageIndex += direction;
+
+    // Wrap around
+    if (currentImageIndex < 0) currentImageIndex = images.length - 1;
+    if (currentImageIndex >= images.length) currentImageIndex = 0;
+
+    document.getElementById("product-image").src = images[currentImageIndex];
+  }
 });
 
