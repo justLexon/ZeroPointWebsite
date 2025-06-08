@@ -504,6 +504,28 @@ main {
   box-shadow: 0 0 40px rgb(244, 191, 255);
 }
 
+.productSizingCont {
+  background-color: transparent;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.productSizing {
+  margin: 3px 10px;
+}
+
+.productSizing button{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(188, 20, 255, 0.5);
+  color: rgb(174, 32, 218);
+  background-color: rgb(199, 199, 199);
+  border-color: white;
+  border-radius: 15px;
+  width: 50px;
+  height: 30px;
+}
+
 
 /* Team Page */
 .team-container {
@@ -789,7 +811,7 @@ main {
 }
 
 .sponsor-taglineC {
-  margin-top: 20px;
+  margin-bottom: 10px;
   color: #ea00ff;
   text-shadow: 0 0 30px rgba(255, 0, 255, 0.7);
 }
