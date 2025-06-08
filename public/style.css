@@ -699,13 +699,76 @@ main {
 ============================================================ */
 .bottom-footer {
   background-color: black;
-  color: white;
-  text-align: center;
+  display: flex;
+  justify-content: center; /* centers .footerContent */
   padding: 20px 0;
   font-size: 14px;
   width: 100%;
   margin-top: auto;
   z-index: 800;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px; /* keeps it clean on large screens */
+  padding: 0 20px;
+  color: white;
+  background-color: transparent;
+}
+
+.footerLeft,
+.footerCenter,
+.footerRight {
+  flex: 1;
+}
+
+.footerLeft {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: transparent;
+}
+
+.footerCenter {
+  text-align: center;
+}
+
+
+.footerRight {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.dubbyFooter {
+  background-color: transparent;
+  margin-right: 40px;
+}
+
+.dubbyFooter img {
+  width: 80px;
+}
+
+.patreonFooter {
+  width: 110px;
+}
+
+.ytLogo img{
+  width: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.tiktokLogo img{
+  width: 40px;
+}
+
+.instaLogo img{
+  width: 40px;
+  margin-left: 5px;
 }
 
 /* ============================================================
@@ -1031,4 +1094,50 @@ main {
   .purchase-cardDescViewing {
     width: 120%;
   }
+
+  .bottom-footer {
+    height: 100px;
+  }
+
+  .footerLeft {
+    height: 75px;
+    flex-wrap: wrap;
+  }
+
+  .footerCenter {
+    text-align: center;
+  }
+
+  .footerRight {
+    height: 75px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    justify-content: right;
+  }
+
+  .dubbyFooter {
+  background-color: transparent;
+  margin-right: 20px;
+  }
+
+  .dubbyFooter img {
+    width: 60px;
+  }
+
+  .patreonFooter {
+    width: 70px;
+  }
+
+  .ytLogo img{
+    width: 30px;
+  }
+
+  .tiktokLogo img{
+    width: 30px;
+  }
+
+  .instaLogo img{
+    width: 30px;
+  }
+
 }
