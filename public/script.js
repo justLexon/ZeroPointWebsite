@@ -80,5 +80,14 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.addEventListener('click', () => {
     sidebar.style.display = 'none';
   });
+
+    const buttons = document.querySelectorAll('.productSizing button');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active')); // Remove active from all
+      button.classList.add('active'); // Add active to clicked
+    });
+  });
 });
 
