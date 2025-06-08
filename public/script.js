@@ -97,41 +97,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Black Shirt Imgs
-  const images = [
+  const imagesBlackShirt = [
     "../images/BlackShirtF.png",
     "../images/BlackShirtB.png",
   ];
 
   let currentImageIndex = 0;
 
-  window.changeImage = function(direction) {
+  window.changeImageBlackShirt = function(direction) {
     currentImageIndex += direction;
 
     // Wrap around
-    if (currentImageIndex < 0) currentImageIndex = images.length - 1;
-    if (currentImageIndex >= images.length) currentImageIndex = 0;
+    if (currentImageIndex < 0) currentImageIndex = imagesBlackShirt.length - 1;
+    if (currentImageIndex >= imagesBlackShirt.length) currentImageIndex = 0;
 
-    document.getElementById("product-image").src = images[currentImageIndex];
+    document.getElementById("blackShirtproduct-image").src = imagesBlackShirt[currentImageIndex];
   }
 
 
 
   // Grey Shirt Imgs
-  const Gimages = [
+  const imagesGreyShirt = [
     "../images/GreyShirtF.png",
     "../images/GreyShirtB.png",
   ];
 
   let currentGImageIndex = 0;
 
-  window.changeImage = function(direction) {
+  window.changeImageGreyShirt = function(direction) {
     currentGImageIndex += direction;
 
     // Wrap around
-    if (currentGImageIndex < 0) currentGImageIndex = Gimages.length - 1;
-    if (currentGImageIndex >= Gimages.length) currentGImageIndex = 0;
+    if (currentGImageIndex < 0) currentGImageIndex = imagesGreyShirt.length - 1;
+    if (currentGImageIndex >= imagesGreyShirt.length) currentGImageIndex = 0;
 
-    document.getElementById("product-image").src = Gimages[currentGImageIndex];
+    document.getElementById("greyShirtproduct-image").src = imagesGreyShirt[currentGImageIndex];
   }
 
   
@@ -144,14 +144,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let currentInfantImageIndex = 0;
 
-  window.changeImage = function(direction) {
+  window.changeImageBaby = function(direction) {
     currentInfantImageIndex += direction;
 
     // Wrap around
     if (currentInfantImageIndex < 0) currentInfantImageIndex = infantImages.length - 1;
     if (currentInfantImageIndex >= infantImages.length) currentInfantImageIndex = 0;
 
-    document.getElementById("product-image").src = infantImages[currentInfantImageIndex];
+    document.getElementById("babyproduct-image").src = infantImages[currentInfantImageIndex];
   }
 
   
