@@ -88,10 +88,11 @@ main {
   font-size: 2.5rem;
   letter-spacing: 0.3rem;
   color: #ea00ff;
-  text-shadow: 0 0 15px rgb(229, 34, 255), 0 0 40px rgb(220, 52, 253);
+  text-shadow: 0 0 15px rgb(154, 24, 172), 0 0 10px rgb(152, 33, 175);
   text-align: center;
   margin-left: 22%;
   animation: glowFadeIn 1.5s ease-out;
+  -webkit-text-stroke: 0.5px rgb(232, 120, 255); /* Stroke width and color */
 }
 
 @keyframes glowFadeIn {
@@ -380,20 +381,19 @@ main {
   background-color: transparent;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 50px auto;
-  gap: 60px;
+  justify-content: center;
 }
 
 .product-cardViewing {
-  min-width: 500px;
-  min-height: 500px;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem 3rem;
   background: rgba(255, 255, 255, 0.02);
   border: 2px solid rgba(255, 255, 255, 0.541);
   backdrop-filter: blur(10px);
   color: white;
   padding: 20px 15px;
-  border-radius: 15px;
+  border-radius: 55px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
@@ -409,11 +409,10 @@ main {
 }
 
 .product-cardViewing img {
-  min-width: 80%;
+  min-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 35px;
 }
 
 .product-titleViewing {
@@ -730,7 +729,7 @@ main {
 /* Sponsor Card For Sponsors Page */
 .sponsor-feature {
   text-align: center;
-  background-color: rgba(58, 1, 63, 0.03);
+  background-color: rgba(255, 255, 255, 0.021);
   border: 2px solid rgba(255, 255, 255, 0.514);
   backdrop-filter: blur(10px);  padding: 1rem;
   border-radius: 50px;
