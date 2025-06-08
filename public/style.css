@@ -395,7 +395,7 @@ main {
 .product-cardViewing {
   width: 90%;
   max-width: 580px;
-  margin: 2rem 1rem;
+  margin: 2rem 1.2rem;
   background: rgba(255, 255, 255, 0.02);
   border: 2px solid rgba(255, 255, 255, 0.541);
   backdrop-filter: blur(10px);
@@ -461,7 +461,6 @@ main {
   height: 10%;
   background: rgba(255, 255, 255, 0.02);
   border: 2px solid rgba(255, 255, 255, 0.541);
-  backdrop-filter: blur(10px);
   color: white;
   padding: 20px 15px;
   border-radius: 15px;
@@ -472,7 +471,8 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 155px;
+  margin-top: 35px;
 }
 
 .purchase-cardViewing:hover {
@@ -481,8 +481,9 @@ main {
 }
 
 .purchase-cardDescViewing {
+  max-height: 300px;
   width: 100%;
-  height: 30%;
+  height: auto;
   background: rgba(255, 255, 255, 0.02);
   border: 2px solid rgba(255, 255, 255, 0.541);
   backdrop-filter: blur(10px);
@@ -965,16 +966,12 @@ main {
   .introVid {
     margin-top: -20px;
   }
-}
 
-
-@media (max-width: 700px) {
   .productViewing-container {
     flex-wrap: wrap;
   }
 
   .purchase-cardDescViewing {
     width: 120%;
-    margin-bottom: 190px;
   }
 }
