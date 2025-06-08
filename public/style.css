@@ -322,7 +322,7 @@ main {
 
 .product-card {
   width: 220px;
-  height: 380px;
+  height: 310px;
   background: rgba(255, 255, 255, 0.001);
   border: 2px solid rgba(255, 255, 255, 0.541);
   backdrop-filter: blur(10px);
