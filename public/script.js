@@ -95,6 +95,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Product Pages Images For Clicking
 
+
+// Black Shirt Imgs
   const images = [
     "../images/BlackShirtF.png",
     "../images/BlackShirtB.png",
@@ -111,5 +113,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("product-image").src = images[currentImageIndex];
   }
+
+
+
+  // Grey Shirt Imgs
+  const Gimages = [
+    "../images/GreyShirtF.png",
+    "../images/GreyShirtB.png",
+  ];
+
+  let currentGImageIndex = 0;
+
+  window.changeImage = function(direction) {
+    currentGImageIndex += direction;
+
+    // Wrap around
+    if (currentGImageIndex < 0) currentGImageIndex = Gimages.length - 1;
+    if (currentGImageIndex >= Gimages.length) currentGImageIndex = 0;
+
+    document.getElementById("product-image").src = Gimages[currentGImageIndex];
+  }
+
+  
+  
+  // Infant Imgs
+  const infantImages = [
+    "../images/BabyF.png",
+    "../images/BabyB.png",
+  ];
+
+  let currentInfantImageIndex = 0;
+
+  window.changeImage = function(direction) {
+    currentInfantImageIndex += direction;
+
+    // Wrap around
+    if (currentInfantImageIndex < 0) currentInfantImageIndex = infantImages.length - 1;
+    if (currentInfantImageIndex >= infantImages.length) currentInfantImageIndex = 0;
+
+    document.getElementById("product-image").src = infantImages[currentInfantImageIndex];
+  }
+
+  
 });
 
