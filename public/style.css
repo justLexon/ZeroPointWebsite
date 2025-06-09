@@ -1121,8 +1121,8 @@ main {
   }
 
   .dubbyFooter {
-  background-color: transparent;
-  margin-right: 20px;
+    background-color: transparent;
+    margin-right: 20px;
   }
 
   .dubbyFooter img {
@@ -1143,6 +1143,15 @@ main {
 
   .instaLogo img{
     width: 30px;
+  }
+
+  .sponsor-feature {
+    margin: 2rem 2rem;
+    max-width: 350px;
+  }
+
+  .dubbyImgC {
+    width: 200px;
   }
 
 }
