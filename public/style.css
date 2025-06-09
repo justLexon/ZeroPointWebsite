@@ -1154,4 +1154,8 @@ main {
     width: 200px;
   }
 
+  .dubbySponsorC img:hover {
+    width: 230px;
+  }
+
 }
