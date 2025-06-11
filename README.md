@@ -1,5 +1,9 @@
 # ZeroPointWebsite
 
+    Firebase
+-Deploy: firebase deploy
+****************************
+
     5_22_25
 -Added Shop Link
 -Added Clickable Cards in Shop
